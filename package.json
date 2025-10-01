@@ -1,0 +1,21 @@
+{
+  "name": "scalable-web-app",
+  "version": "1.0.0",
+  "description": "Scalable Web App with Authentication & Dashboard - Frontend Developer Intern Assignment",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install"
+  },
+  "keywords": ["react", "nextjs", "nodejs", "authentication", "dashboard"],
+  "author": "Frontend Developer Intern",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
+
